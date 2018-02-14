@@ -9,8 +9,6 @@ Deploy a static site in three keystrokes!
 
 ![shell](/images/shell.png)
 
-
-
 ## Requirements
 
 - **Fast** From first keystroke to live website!
@@ -24,7 +22,7 @@ See [#1](/issues/1).
 
 ## Name
 
-Currently, we have named this project `s3d`. That is an incredibly boring name. It stands for S3 Deploy. Again, very boring. We would love to give it a new name that sounds good. If you have an idea, feel free to create an [issue](/issues)! The requirements for the name are as follows:
+Currently, we have named this project `s3d`. That is an incredibly boring name. It stands for S3 Deploy. Again, very boring. We would love to give it a new name that sounds good. If you have an idea, feel free to create an [issue](/issues)! These are the requirements for the name:
 
 - Short. Less than 5 characters. The shorter the better.
 - Available on [NPM](https://npmjs.com). 
@@ -34,10 +32,7 @@ Currently, we have named this project `s3d`. That is an incredibly boring name. 
 
 
 ## Inspiration
-
-Inspiration for this project comes from the following:
+Inspiration for this project comes from thses projects:
 
 - [Surge.sh](https://surge.sh)
-
-
 - [Zeit's](https://zeit.co) [Now](https://zeit.co/now)

@@ -1,0 +1,10 @@
+{
+  "name": "s3d",
+  "version": "0.0.1",
+  "description": "🚀 Deploy static websites quickly and easily to AWS S3!",
+  "main": "index.js",
+  "repository": "https://github.com/filiosoft/s3d.git",
+  "author": "Filiosoft Open Source <opensource@filiosoft.com>",
+  "license": "MIT",
+  "private": false
+}
