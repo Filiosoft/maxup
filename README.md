@@ -45,11 +45,11 @@ The API will serve as a sort of proxy to S3. It will provide authentication so t
 
 ### Tools & Language
 
-See [#1](/issues/1).
+See [#1](https://github.com/Filiosoft/s3d/issues/1).
 
 ## Name
 
-Currently, we have named this project `s3d`. That is an incredibly boring name. It stands for S3 Deploy. Again, very boring. We would love to give it a new name that sounds good. If you have an idea, feel free to create an [issue](/issues)! These are the requirements for the name:
+Currently, we have named this project `s3d`. That is an incredibly boring name. It stands for S3 Deploy. Again, very boring. We would love to give it a new name that sounds good. If you have an idea, feel free to create an [issue](https://github.com/Filiosoft/s3d/issues)! These are the requirements for the name:
 
 - Short. Less than 5 characters. The shorter the better.
 - Available on [NPM](https://npmjs.com). 
