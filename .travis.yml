@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- node
+before_install:
+- pyenv versions
+- pyenv global system 3.6
+- pip3 install mkdocs mkdocs-material
+script:
+- yarn run docs
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    local_dir: docs-site
+    github_token: "$GITHUB_TOKEN"
+    on:
+      branch: master

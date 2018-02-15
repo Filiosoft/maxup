@@ -1,0 +1,9 @@
+site_name: s3d
+site_description: Deploy static websites quickly and easily to AWS S3!
+theme: material
+copyright: Copyright &copy; 2018 Filiosoft, LLC
+site_author: Filiosoft, LLC
+repo_url: https://github.com/filiosoft/s3d/
+pages:
+  - Intro: index.md
+  - The CLI: cli.md
