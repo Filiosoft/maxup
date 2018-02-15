@@ -8,6 +8,6 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "docs": "cp README.md docs/index.md && mkdocs build"
+    "docs": "cp README.md docs/index.md && sed -i -e 's/docs\///g' docs/index.md && mkdocs build"
   }
 }
