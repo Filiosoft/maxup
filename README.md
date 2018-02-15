@@ -20,7 +20,7 @@ Deploy a static site in three keystrokes!
 
 There will be two components to this project. 
 
-#### The CLI
+#### [The CLI](/docs/cli.md)
 
 The command line interface will be the primary means of deploying websites. It will be simple but feature complete. The CLI will also supersede [RVA-CLI](https://filiosoft.net/rva-cli), so it has to provide the same functionality as RVA. 
 
@@ -49,7 +49,7 @@ See [#1](https://github.com/Filiosoft/s3d/issues/1).
 
 ## Name
 
-Currently, we have named this project `s3d`. That is an incredibly boring name. It stands for S3 Deploy. Again, very boring. We would love to give it a new name that sounds good. If you have an idea, feel free to create an [issue](https://github.com/Filiosoft/s3d/issues)! These are the requirements for the name:
+Currently, we have named this project `s3d`. That is an incredibly boring name. It stands for S3 Deploy. Again, very boring. We would love to give it a new name that sounds good. If you have an idea, feel free to comment on issue [#2](https://github.com/Filiosoft/s3d/issues/2)! These are the requirements for the name:
 
 - Short. Less than 5 characters. The shorter the better.
 - Available on [NPM](https://npmjs.com). 
