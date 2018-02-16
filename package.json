@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "docs": "cp README.md docs/index.md && sed -i -e 's/docs\\///g' docs/index.md && mkdocs build && apidoc -i api/ -o site/api"
+    "docs": "cp README.md docs/index.md && sed -i -e 's/docs\\///g' docs/index.md && mkdocs build && apidoc -i api/ -o site/endpoints"
   },
   "devDependencies": {
     "apidoc": "^0.17.6"

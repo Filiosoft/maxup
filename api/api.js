@@ -1,28 +1,42 @@
 /**
- * @api {post} /login Login or Create Account
- * @apiName PostLogin
- * @apiGroup User
- * @apiDescription Login to the API. If the user does not exist, it will be created.
+ * @api {post} /auth Request a login
+ * @apiName PostAuth
+ * @apiGroup Authentication
+ * @apiDescription Request a new login for a user to get a token.
  *
- * @apiParam {String} email Users unique email address.
- * @apiParam {String} password Users password.
+ * @apiParam {String} email         The user email.
  *
- * @apiSuccess {Boolean} success    Success true or false.
- * @apiSuccess {String} message     Lastname of the User.
- * @apiSuccess {String} token       JWT login token.
+ * @apiSuccess {String} token       The token used to verify the user accepted the login request.
  *
  * @apiExample {curl} Example usage:
- *     curl -i -X "POST" https://api.s3d.sh/v1/login
+ *     curl -i -X "POST" https://api.s3d.sh/v1/auth
  * @apiParamExample {json} Request-Example:
  *     {
- *       "email": "nprail@filiosoft.com",
- *       "password": "Pa$$w0rd"
+ *       "email": "jim@example.com"
  *     }
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
  *     {
- *       "success": true,
- *       "message": "Logged in successfuly!"
- *       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU5OTVlOTI0MjE2NTY2MDAxOGJiMGE4YSIsInVzZXJuYW1lIjoibnByYWlsIiwiaWF0IjoxNTAzMzE4MTIwLCJleHAiOjE1MDMzMjgyMDB9.CATgjmJm-qzq9IAYI5mFMjKe9LdFmF7pvBFMSNwDjLQ"
+ *       "token": "T1dmvPu36nmyYisXAs7IRzcR"
+ *     }
+ */
+
+ /**
+ * @api {post} /auth/verify?email&token Verify login
+ * @apiName GetVerify
+ * @apiGroup Authentication
+ * @apiDescription Verify the user accepted the login request and get a authentication token. The user email address and the token received after [requesting the login](#api-Authentication-PostAuth) must be added to the URL as a query string with the names `email` and `token`.
+ *
+ * @apiParam {String} email         The user email.
+ * @apiParam {String} token         The token recieved with [PostAuth](#api-Authentication-PostAuth)].
+ *
+ * @apiSuccess {String} token       The token used to verify the user accepted the login request.
+ *
+ * @apiExample {curl} Example usage:
+ *     curl https://api.s3d.sh/v1/auth/verify?email=jim@example.com&token=T1dmvPu36nmyYisXAs7IRzcR
+ * @apiSuccessExample {json} Success-Response:
+ *     HTTP/1.1 200 OK
+ *     {
+ *       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ"
  *     }
  */
