@@ -8,6 +8,14 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "docs": "cp README.md docs/index.md && sed -i -e 's/docs\\///g' docs/index.md && mkdocs build"
+    "docs": "cp README.md docs/index.md && sed -i -e 's/docs\\///g' docs/index.md && mkdocs build && apidoc -i api/ -o site/api"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.6"
+  },
+  "apidoc": {
+    "title": "s3d API Docs",
+    "url": "https://api.s3d.sh/v1",
+    "sampleUrl": "https://api.s3d.sh/v1"
   }
 }

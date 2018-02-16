@@ -20,7 +20,7 @@ Deploy a static site in three keystrokes!
 
 There will be two components to this project. 
 
-#### The CLI
+#### [The CLI](docs/cli.md)
 
 The command line interface will be the primary means of deploying websites. It will be simple but feature complete. The CLI will also supersede [RVA-CLI](https://filiosoft.net/rva-cli), so it has to provide the same functionality as RVA. 
 
@@ -36,11 +36,11 @@ The API will serve as a sort of proxy to S3. It will provide authentication so t
 4. `s3d` uploads the compressed site to the API
 5. API receives the upload (checks users's permissions)
 6. Concurrently, API does these
-   - API decompresses the site
-   - API creates an S3 bucket (if it doesn't exist)
+    - API decompresses the site
+    - API creates an S3 bucket (if it doesn't exist)
 7. Concurrently, API does these
-   - API provisions CDN for the new S3 bucket (if it doesn't exist)
-   - API uploads files to the new S3 bucket
+    - API provisions CDN for the new S3 bucket (if it doesn't exist)
+    - API uploads files to the new S3 bucket
 8. API responds to `s3d` with the new site's address
 
 ### Tools & Language
