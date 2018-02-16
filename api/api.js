@@ -1,10 +1,6 @@
 /**
  * @apiDefine RequireAuth
- * @apiHeader {String} Authorization Bearer + JWT token.
- * @apiHeaderExample {json} AuthorizationHeader:
- *     {
- *       "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ"
- *     }
+ * @apiHeader (Authorization) {String} Authorization Bearer + JWT token.
  */
 
 /**
@@ -85,5 +81,37 @@
  *     HTTP/1.1 200 OK
  *     {
  *       "message": "Login verified!"
+ *     }
+ */
+
+/**
+ * @api {get} /v1/files Upload files
+ * @apiName PostFiles
+ * @apiGroup Deploy
+ * @apiDescription Upload files to the API.
+ * @apiUse RequireAuth
+ *
+ * @apiSuccess {String} message         Response message (e.g. File uploaded successfully)
+ * 
+ * @apiHeader {String} Content-Type     With the value `application/octet-stream`
+ * @apiHeader {String} Content-Length   The file size in bytes
+ * @apiHeader {String} x-s3d-digest     The file SHA1 used to check integrity
+ * @apiHeader {String} x-s3d-size       The file size in bytes
+ * @apiHeader {String} x-s3d-filename   The name of the file
+ * @apiHeader {String} x-s3d-site       Site to be deployed to
+ * 
+ * @apiExample {curl} Example usage:
+ *     curl -X POST "https://api.zeit.co/v2/now/files" \
+ *        -H "Authorization: Bearer $TOKEN" \
+ *        -H "Content-Type: application/octet-stream" \
+ *        -H "Content-Length: 145" \
+ *        -H "x-s3d-digest: 514b5ffa5ef016df7f5f42370157d49f97526a42" \
+ *        -H "x-s3d-size: 145" \
+ *        -H "x-s3d-site: testsite.s3d.sh"
+ *        -d 'file contents'
+ * @apiSuccessExample {json} Success-Response:
+ *     HTTP/1.1 200 OK
+ *     {
+ *       "message": "File uploaded successfully!"
  *     }
  */
