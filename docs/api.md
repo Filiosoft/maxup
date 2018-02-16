@@ -28,4 +28,4 @@ curl "https://api.s3d.sh/whoami" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsI
 ```
 
 ## Endpoints
-The endpoints can be found [here](/endpoints.md)
+The endpoints can be found [here](endpoints.md)

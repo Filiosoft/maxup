@@ -11,4 +11,6 @@ repo_url: https://github.com/filiosoft/s3d/
 pages:
   - Intro: index.md
   - The CLI: cli.md
-  - The API: api.md
+  - The API: 
+    - API Basics: api.md
+    - Endpoints: endpoints.md
