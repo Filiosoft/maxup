@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "🚀 Deploy static websites quickly and easily to AWS S3!",
   "main": "index.js",
-  "repository": "https://github.com/filiosoft/s3d.git",
+  "repository": "filiosoft/s3d",
   "author": "Filiosoft Open Source <opensource@filiosoft.com>",
   "license": "MIT",
   "private": false,
@@ -15,7 +15,7 @@
   },
   "apidoc": {
     "title": "s3d API Docs",
-    "url": "https://api.s3d.sh/v1",
-    "sampleUrl": "https://api.s3d.sh/v1"
+    "url": "https://api.s3d.sh",
+    "sampleUrl": "https://api.s3d.sh"
   }
 }

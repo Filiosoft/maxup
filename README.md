@@ -24,7 +24,7 @@ There will be two components to this project.
 
 The command line interface will be the primary means of deploying websites. It will be simple but feature complete. The CLI will also supersede [RVA-CLI](https://filiosoft.net/rva-cli), so it has to provide the same functionality as RVA. 
 
-#### The API
+#### [The API](docs/api.md)
 
 The API will serve as a sort of proxy to S3. It will provide authentication so that just any user can't publish to your website. The biggest challenge to this piece will be scalability. The API has to be able to proxy 100's of file uploads at once. The API will also handle provisioning of new buckets and CDNs. 
 
