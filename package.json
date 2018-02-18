@@ -1,6 +1,6 @@
 {
   "name": "maxup",
-  "version": "0.0.1",
+  "version": "0.0.1-canary.0",
   "description": "🚀 Deploy static websites quickly and easily to AWS S3!",
   "main": "bin/max.js",
   "repository": "filiosoft/maxup",
