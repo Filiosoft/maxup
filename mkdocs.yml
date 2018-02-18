@@ -13,4 +13,4 @@ pages:
   - The CLI: cli.md
   - The API: 
     - API Basics: api.md
-    - Endpoints: endpoints.md
+    - Endpoints: api/endpoints.md

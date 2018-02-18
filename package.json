@@ -8,14 +8,6 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "docs": "cp README.md docs/index.md && sed -i -e 's/docs\\///g' docs/index.md && mkdocs build && apidoc -i api/ -o site/endpoints"
-  },
-  "devDependencies": {
-    "apidoc": "^0.17.6"
-  },
-  "apidoc": {
-    "title": "maxup API Docs",
-    "url": "https://api.maxup.sh",
-    "sampleUrl": "https://api.maxup.sh"
+    "docs": "cp README.md docs/index.md && sed -i -e 's/docs\\///g' docs/index.md && mkdocs build && rm -rf site/api/endpoints"
   }
 }
