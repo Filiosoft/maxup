@@ -2,12 +2,30 @@
   "name": "maxup",
   "version": "0.0.1",
   "description": "🚀 Deploy static websites quickly and easily to AWS S3!",
-  "main": "index.js",
+  "main": "bin/max.js",
   "repository": "filiosoft/maxup",
   "author": "Filiosoft Open Source <opensource@filiosoft.com>",
   "license": "MIT",
   "private": false,
+  "bin": {
+    "max": "./bin/max.js",
+    "maxup": "./bin/max.js"
+  },
   "scripts": {
     "docs": "cp README.md docs/index.md && sed -i -e 's/docs\\///g' docs/index.md && mkdocs build && rm -rf site/api/endpoints"
+  },
+  "dependencies": {
+    "ansi-escapes": "^3.0.0",
+    "axios": "^0.17.1",
+    "chalk": "^2.3.1",
+    "cli-spinner": "^0.2.8",
+    "commander": "^2.14.1",
+    "configstore": "^3.1.1",
+    "email-prompt": "^0.3.2",
+    "email-validator": "^1.1.1",
+    "inquirer": "^5.1.0",
+    "ms": "^2.1.1",
+    "ora": "^1.4.0",
+    "querystring": "^0.2.0"
   }
 }
