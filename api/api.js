@@ -14,7 +14,7 @@
  * @apiSuccess {String} token       The token used to verify the user accepted the login request.
  *
  * @apiExample {curl} Example usage:
- *     curl -i -X "POST" https://api.s3d.sh/v1/auth
+ *     curl -i -X "POST" https://api.maxup.sh/v1/auth
  * @apiParamExample {json} Request-Example:
  *     {
  *       "email": "jim@example.com"
@@ -38,7 +38,7 @@
  * @apiSuccess {String} token       The token used to verify the user accepted the login request.
  *
  * @apiExample {curl} Example usage:
- *     curl https://api.s3d.sh/v1/auth/verify?email=jim@example.com&token=T1dmvPu36nmyYisXAs7IRzcR
+ *     curl https://api.maxup.sh/v1/auth/verify?email=jim@example.com&token=T1dmvPu36nmyYisXAs7IRzcR
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
  *     {
@@ -58,7 +58,7 @@
  * @apiSuccess {String} message                 Response message.
  *
  * @apiExample {curl} Example usage:
- *     curl https://api.s3d.sh/v1/auth/confirm?email=jim@example.com&token=317e0ffc-d77d-489f-b04c-78035a20e6c2
+ *     curl https://api.maxup.sh/v1/auth/confirm?email=jim@example.com&token=317e0ffc-d77d-489f-b04c-78035a20e6c2
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
  *     {
@@ -76,7 +76,7 @@
  * @apiSuccess {String} email       Current users email address.
  *
  * @apiExample {curl} Example usage:
- *     curl https://api.s3d.sh/v1/auth/whoami
+ *     curl https://api.maxup.sh/v1/auth/whoami
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
  *     {
@@ -95,19 +95,19 @@
  * 
  * @apiHeader {String} Content-Type     With the value `application/octet-stream`
  * @apiHeader {String} Content-Length   The file size in bytes
- * @apiHeader {String} x-s3d-digest     The file SHA1 used to check integrity
- * @apiHeader {String} x-s3d-size       The file size in bytes
- * @apiHeader {String} x-s3d-filename   The name of the file
- * @apiHeader {String} x-s3d-site       Site to be deployed to
+ * @apiHeader {String} x-maxup-digest     The file SHA1 used to check integrity
+ * @apiHeader {String} x-maxup-size       The file size in bytes
+ * @apiHeader {String} x-maxup-filename   The name of the file
+ * @apiHeader {String} x-maxup-site       Site to be deployed to
  * 
  * @apiExample {curl} Example usage:
  *     curl -X POST "https://api.zeit.co/v2/now/files" \
  *        -H "Authorization: Bearer $TOKEN" \
  *        -H "Content-Type: application/octet-stream" \
  *        -H "Content-Length: 145" \
- *        -H "x-s3d-digest: 514b5ffa5ef016df7f5f42370157d49f97526a42" \
- *        -H "x-s3d-size: 145" \
- *        -H "x-s3d-site: testsite.s3d.sh"
+ *        -H "x-maxup-digest: 514b5ffa5ef016df7f5f42370157d49f97526a42" \
+ *        -H "x-maxup-size: 145" \
+ *        -H "x-maxup-site: testsite.maxup.sh"
  *        -d 'file contents'
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK

@@ -1,4 +1,4 @@
-site_name: s3d
+site_name: maxup
 site_description: Deploy static websites quickly and easily to AWS S3!
 theme:
   name: material
@@ -7,7 +7,7 @@ theme:
     accent: 'green'
 copyright: Copyright &copy; 2018 Filiosoft, LLC
 site_author: Filiosoft, LLC
-repo_url: https://github.com/filiosoft/s3d/
+repo_url: https://github.com/filiosoft/maxup/
 pages:
   - Intro: index.md
   - The CLI: cli.md

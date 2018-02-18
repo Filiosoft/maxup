@@ -12,53 +12,53 @@ The command line interface will be the primary means of deploying websites. It w
 Deploy the current directory as a static website! Or specify the project path. 
 
 ```bash
-$ s3d [project path]
+$ max [project path]
 ```
 
 ### Login
-Login or create an account on the `s3d` API.
+Login or create an account on the `maxup` API.
 ```bash
-$ s3d login
+$ max login
 ```
 
 ### Logout
-Logout of the `s3d` API. 
+Logout of the `maxup` API. 
 ```bash
-$ s3d logout
+$ max logout
 ```
 
 ### Who Am I?
-Check who you are logged in as on the `s3d` API,
+Check who you are logged in as on the `maxup` API,
 ```bash
-$ s3d whoami
+$ max whoami
 ```
 
 ### List Websites
 List all the projects that you have access to. 
 ```bash
-$ s3d list
+$ max list
 ```
 
 ### Destroy Website
 Destroy a published project. 
 ```bash
-$ s3d destroy
+$ max destroy
 ```
 
 ### Initialize Config
 Initialize optional custom config and config required for [Review Apps](https://docs.gitlab.com/ee/ci/review_apps/). 
 ```bash
-$ s3d init
+$ max init
 ```
 
 ### Publish Review App
-Publish a static website [Review App](https://docs.gitlab.com/ee/ci/review_apps/) based on your base domain set with `s3d init`. 
+Publish a static website [Review App](https://docs.gitlab.com/ee/ci/review_apps/) based on your base domain set with `max init`. 
 ```
-$ s3d review start [name]
+$ max review start [name]
 ```
 
 ### Stop Review App
 Destroy an already published [Review App](https://docs.gitlab.com/ee/ci/review_apps/). 
 ```bash
-$ s3d review stop [name]
+$ max review stop [name]
 ```

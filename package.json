@@ -1,9 +1,9 @@
 {
-  "name": "s3d",
+  "name": "maxup",
   "version": "0.0.1",
   "description": "🚀 Deploy static websites quickly and easily to AWS S3!",
   "main": "index.js",
-  "repository": "filiosoft/s3d",
+  "repository": "filiosoft/maxup",
   "author": "Filiosoft Open Source <opensource@filiosoft.com>",
   "license": "MIT",
   "private": false,
@@ -14,8 +14,8 @@
     "apidoc": "^0.17.6"
   },
   "apidoc": {
-    "title": "s3d API Docs",
-    "url": "https://api.s3d.sh",
-    "sampleUrl": "https://api.s3d.sh"
+    "title": "maxup API Docs",
+    "url": "https://api.maxup.sh",
+    "sampleUrl": "https://api.maxup.sh"
   }
 }
