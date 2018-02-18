@@ -7,6 +7,7 @@ const pkg = require('../package.json')
 const login = require('../logic/login')
 const logout = require('../logic/logout')
 const whoami = require('../logic/whoami')
+const deploy = require('../logic/deploy')
 
 const conf = require('../config')
 
@@ -53,6 +54,24 @@ program
     .description('Check who you are logged into maxup API as')
     .action(() => {
         whoami()
+            .then(() => {
+                process.exit(0)
+            })
+            .catch(err => {
+                console.log(err.message)
+                process.exit(1)
+            })
+    })
+
+// deploy command!
+program
+    .command('deploy [dir]', {
+        isDefault: true
+    })
+    .alias('d')
+    .description('Performs a deployment (default)')
+    .action(() => {
+        deploy()
             .then(() => {
                 process.exit(0)
             })

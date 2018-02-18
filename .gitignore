@@ -68,3 +68,4 @@ typings/
 docs/index.md
 site/
 package-lock.json
+dist/

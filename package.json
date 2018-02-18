@@ -12,7 +12,8 @@
     "maxup": "./bin/max.js"
   },
   "scripts": {
-    "docs": "cp README.md docs/index.md && sed -i -e 's/docs\\///g' docs/index.md && mkdocs build && rm -rf site/api/endpoints"
+    "docs": "cp README.md docs/index.md && sed -i -e 's/docs\\///g' docs/index.md && mkdocs build && rm -rf site/api/endpoints",
+    "build": "pkg . --targets=node8-linux-x64,node8-win-x64,node8-macos-x64 --out-path dist/"
   },
   "dependencies": {
     "ansi-escapes": "^3.0.0",
@@ -27,5 +28,9 @@
     "ms": "^2.1.1",
     "ora": "^1.4.0",
     "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "pkg": "^4.3.0",
+    "release": "^3.1.6"
   }
 }
