@@ -27,7 +27,7 @@
  */
 
 /**
- * @api {post} /v1/auth/verify?email&token Verify login
+ * @api {get} /v1/auth/verify?email&token Verify login
  * @apiName GetVerify
  * @apiGroup Authentication
  * @apiDescription Verify the user accepted the login request and get a authentication token. The user email address and the token received after [requesting the login](#api-Authentication-PostAuth) must be added to the URL as a query string with the names `email` and `token`.
@@ -47,7 +47,7 @@
  */
 
 /**
- * @api {post} /v1/auth/confirm?email&token Confirm login request
+ * @api {get} /v1/auth/confirm?email&token Confirm login request
  * @apiName GetConfirm
  * @apiGroup Authentication
  * @apiDescription Confirm a login request. This link is sent to a user when a login is requested. 
@@ -58,7 +58,7 @@
  * @apiSuccess {String} message                 Response message.
  *
  * @apiExample {curl} Example usage:
- *     curl https://api.maxup.sh/v1/auth/confirm?email=jim@example.com&token=317e0ffc-d77d-489f-b04c-78035a20e6c2
+ *     curl "https://api.maxup.sh/v1/auth/confirm?email=jim@example.com&token=317e0ffc-d77d-489f-b04c-78035a20e6c2"
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
  *     {

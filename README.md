@@ -34,9 +34,7 @@ The API will serve as a sort of proxy to S3. It will provide authentication so t
 2. `maxup` checks that it has permission to deploy this site
 3. `max` uploads all the sites files to the API
 4. API receives the upload (checks users's permissions)
-5. Concurrently, API does these
-    - API decompresses the site
-    - API creates an S3 bucket (if it doesn't exist)
+5. API creates an S3 bucket (if it doesn't exist)
 6. Concurrently, API does these
     - API provisions CDN for the new S3 bucket (if it doesn't exist)
     - API uploads files to the new S3 bucket
