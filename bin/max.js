@@ -12,7 +12,7 @@ const deploy = require('../logic/deploy')
 const conf = require('../config')
 
 program
-    .version(pkg.version)
+    .version(pkg.version, '-v, --version')
     .description(pkg.description)
 
 // login command
@@ -69,9 +69,11 @@ program
         isDefault: true
     })
     .alias('d')
+    //.arguments('<dir>')
     .description('Performs a deployment (default)')
-    .action(() => {
-        deploy()
+    .option('-s, --site', 'Website name')
+    .action((site) => {
+        deploy(site)
             .then(() => {
                 process.exit(0)
             })

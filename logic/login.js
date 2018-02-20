@@ -61,7 +61,7 @@ module.exports = async () => {
     while (!token) {
         try {
             await sleep(ms('1s'))
-            token = await maxApi.postVerify(email, verificationToken)
+            token = await maxApi.getVerify(email, verificationToken)
         } catch (err) {
             if (err.code === 'confirmation_failed') {
                 // just wait for the user to click on the link
