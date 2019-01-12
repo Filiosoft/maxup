@@ -3,8 +3,8 @@
   "version": "0.0.1-canary.0",
   "description": "🚀 Deploy static websites quickly and easily to AWS S3!",
   "main": "bin/max.js",
-  "repository": "filiosoft/maxup",
-  "author": "Filiosoft Open Source <opensource@filiosoft.com>",
+  "repository": "maxup-sh/maxup",
+  "author": "Noah Prail <noah@prail.net>",
   "license": "MIT",
   "private": false,
   "bin": {

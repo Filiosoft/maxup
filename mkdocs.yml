@@ -5,9 +5,9 @@ theme:
   palette:
     primary: 'green'
     accent: 'green'
-copyright: Copyright &copy; 2018 Filiosoft, LLC
-site_author: Filiosoft, LLC
-repo_url: https://github.com/filiosoft/maxup/
+copyright: Copyright &copy; 2019 Noah Prail
+site_author: Noah Prail
+repo_url: https://github.com/maxup-sh/maxup/
 pages:
   - Intro: index.md
   - The CLI: cli.md

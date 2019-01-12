@@ -23,7 +23,7 @@ There will be two components to this project.
 
 #### [The CLI](docs/cli.md)
 
-The command line interface will be the primary means of deploying websites. It will be simple but feature complete. The CLI will also supersede [RVA-CLI](https://filiosoft.org/rva-cli), so it has to provide the same functionality as RVA.
+The command line interface will be the primary means of deploying websites. It will be simple but feature complete. The CLI will also supersede [RVA-CLI](https://oss.eventone.page/rva-cli/), so it has to provide the same functionality as RVA.
 
 #### [The API](docs/api.md)
 
@@ -43,7 +43,7 @@ The API will serve as a sort of proxy to S3. It will provide authentication so t
 
 ### Tools & Language
 
-See [#1](https://github.com/Filiosoft/maxup/issues/1).
+See [#1](https://github.com/maxup-sh/maxup/issues/1).
 
 ## Inspiration
 
