@@ -28,4 +28,4 @@ curl "https://api.maxup.sh/whoami" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiI
 ```
 
 ## Endpoints
-The endpoints can be found [here](endpoints.md)
+The endpoints can be found [here](https://maxup-sh.github.io/maxup-api/)
